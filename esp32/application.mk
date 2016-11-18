@@ -102,6 +102,7 @@ APP_MODS_SRC_C = $(addprefix mods/,\
 	analog.c \
 	pybadc.c \
 	modussl.c \
+	modminiz.c \
 	)
 
 

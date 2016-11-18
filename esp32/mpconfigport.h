@@ -131,6 +131,7 @@ extern const struct _mp_obj_module_t utime_module;
 extern const struct _mp_obj_module_t pycom_module;
 extern const struct _mp_obj_module_t mp_module_uhashlib;
 extern const struct _mp_obj_module_t mp_module_ussl;
+extern const struct _mp_obj_module_t mp_module_miniz;
 
 #define MICROPY_PORT_BUILTIN_MODULES \
     { MP_OBJ_NEW_QSTR(MP_QSTR_umachine),        (mp_obj_t)&machine_module },      \
@@ -155,6 +156,7 @@ extern const struct _mp_obj_module_t mp_module_ussl;
     { MP_OBJ_NEW_QSTR(MP_QSTR_time),            (mp_obj_t)&utime_module },        \
     { MP_OBJ_NEW_QSTR(MP_QSTR_hashlib),         (mp_obj_t)&mp_module_uhashlib },  \
     { MP_OBJ_NEW_QSTR(MP_QSTR_ssl),             (mp_obj_t)&mp_module_ussl },      \
+    { MP_OBJ_NEW_QSTR(MP_QSTR_miniz),           (mp_obj_t)&mp_module_miniz },     \
 
 // extra constants
 #define MICROPY_PORT_CONSTANTS \
